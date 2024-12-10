@@ -27,16 +27,13 @@ However, some institutes removed access to the Anaconda servers which may preven
 Check if you are affected by this and consider uninstalling Anaconda and replacing it with Miniforge.
 
 1. Download the Miniforge3 installer for Windows https://conda-forge.org/download/ and run it
-2. IMPORTANT: In the installer, check the box that says "Add Miniforge3 to PATH" (even though the installer says this is not recommmended)
 3. Proceed through the installer with default settings
-3. To verify the installation worked, go to VSCode and, in the top menu select Terminal -> New Terminal
-4. In the terminal that opened, type  `conda --version`
-5. You should see a version number. If you don't, close VSCode and open it again.
+3. To verify the installation worked, open the program "Miniforge Prompt" and type `conda --version` --- you should see a program version printed out
 
 ## Step 4: Setting up Python
 Now we can create a new Python environment where we can install all the packages that we will need in this course.
 
-1. In the VSCode terminal, create a new environment by typing: `conda create -n psychopy python=3.8` and type 'y' (yes) to confirm
+1. In Minforge Prompt, create a new environment by typing: `conda create -n psychopy python=3.8` and type 'y' (yes) to confirm
 2. After it finishes, type: `conda activate psychopy` to activate the new environment --- You should see (psychopy) at the start of your terminal line
 3. Then, finally install the required packages by typing `pip install psychopy psychtoolbox pytest ipytest ipykernel`
 4. You may experience an error that says `Microsoft Visual C++ 14.0 is required`. To fix this, you have to download the [C++ build tools][https://visualstudio.microsoft.com/visual-cpp-build-tools/] and, in the installer, tick the option for "Desktop development with C++".
@@ -44,12 +41,9 @@ Now we can create a new Python environment where we can install all the packages
 ## Step 5: Testing the Installation
 Now the installation is finished, let's test that everything works!
 
-1. In VSCode, open the file `test_psychopy.ipynb`
-2. Click yes for any extension VSCode suggests installing
-3. In the top right corner, click on "Select Kernel" and choose the previously created psychopy environment
-4. If the environment is not detected, restart VSCode
-5. Run the cell in the notebook by clicking the arrow to the left of the cell or pressing `ctrl+enter` while the cell is focused.
-6. If this opens a gray window and displays some text, everything worked out!
-
-
-
+1. Open Miniforge Prompt and type in `code` to start VSCode,
+2. In VSCode open the file `test_psychopy.ipynb`
+3. Click yes for any extension VSCode suggests installing
+4. In the top right corner, click on "Select Kernel" and choose the previously created psychopy environment
+6. Run the cell in the notebook by clicking the arrow to the left of the cell or pressing `ctrl+enter` while the cell is focused.
+7. If this opens a gray window and displays some text, everything worked out!

@@ -34,7 +34,7 @@ Check if you are affected by this and consider uninstalling Anaconda and replaci
 ## Step 4: Setting up Python
 Now we can create a new Python environment where we can install all the packages that we will need in this course.
 
-1. In the VSCode terminal, create a new environment by typing: `conda create -n psychopy python=3.10` and type 'y' (yes) to confirm
+1. In the VSCode terminal, create a new environment by typing: `conda create -n psychopy python=3.9` and type 'y' (yes) to confirm
 2. After it finishes, type: `conda activate psychopy` to activate the new environment --- You should see (psychopy) at the start of your terminal line
 3. Go to this webiste https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ and download the wxPython wheel for your distribution and Python version (for examplen ubuntu-24.04/wxPython-4.2.2-cp310-cp310-linux_x86_64.whl for the latest Ubuntu and Python version 3.10)
 4. Install wxPython by typing `pip install ~/downloads/wxPython-4.2.1-cp39-cp39-linux_x86_64.whl` (the file location may differ)
